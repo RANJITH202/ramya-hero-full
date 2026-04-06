@@ -1,0 +1,113 @@
+/* Ramya Creations - Premium Dark Editorial Styles */
+
+/* Remove default root constraints */
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Base body styles - Dark luxury theme */
+body {
+  background-color: #0a0a0a;
+  color: #FFFFF0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Selection styling - Gold accent */
+::selection {
+  background-color: rgba(212, 175, 55, 0.3);
+  color: #FFFFF0;
+}
+
+/* Image loading fade */
+img {
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+img[loading="lazy"] {
+  opacity: 0;
+}
+
+img[loading="lazy"][data-loaded],
+img:not([loading="lazy"]) {
+  opacity: 1;
+}
+
+/* Custom scrollbar - Dark luxury */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.5);
+}
+
+/* Focus visible styles - Gold accent */
+*:focus-visible {
+  outline: 1px solid rgba(212, 175, 55, 0.6);
+  outline-offset: 3px;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Link hover transitions */
+a {
+  transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+}
+
+/* Premium text utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Grain texture animation */
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  ::selection {
+    background-color: #D4AF37;
+    color: #0a0a0a;
+  }
+}
