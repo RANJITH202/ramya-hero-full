@@ -37,7 +37,7 @@ export const heroConfig: HeroConfig = {
   ctaHref: "#collection",
   secondaryCtaText: "View Craft",
   secondaryCtaHref: "#craft",
-  heroImage: "/hero-jewelry.jpg",
+  heroImage: import.meta.env.BASE_URL + "hero-jewelry.jpg",
   heroImageAlt: "Ramya Creations handmade silk-thread bangles and earrings in rose pink and gold",
   navLinks: [
     { label: "Collection", href: "#collection" },
@@ -71,7 +71,7 @@ export const aboutConfig: AboutConfig = {
     { value: "1000+", label: "Pieces Crafted" },
     { value: "5+", label: "Years of Excellence" },
   ],
-  image: "/hero-jewelry.jpg",
+  image: import.meta.env.BASE_URL + "silk_crafting.png",
   imageAlt: "Artisan crafting silk thread jewelry",
 };
 
@@ -106,7 +106,7 @@ export const collectionConfig: CollectionConfig = {
       name: "Rose Gold Bangles",
       description: "Delicate silk-thread bangles with gold beadwork",
       price: "₹1,299",
-      image: "/hero-jewelry.jpg",
+      image: import.meta.env.BASE_URL + "silk_bangles.png",
       category: "Bangles",
     },
     {
@@ -114,7 +114,7 @@ export const collectionConfig: CollectionConfig = {
       name: "Pearl Drop Earrings",
       description: "Elegant earrings with pearl accents",
       price: "₹899",
-      image: "/hero-jewelry.jpg",
+      image: import.meta.env.BASE_URL + "silk_earrings.png",
       category: "Earrings",
     },
     {
@@ -122,7 +122,7 @@ export const collectionConfig: CollectionConfig = {
       name: "Bridal Set",
       description: "Complete jewelry set for special occasions",
       price: "₹3,499",
-      image: "/hero-jewelry.jpg",
+      image: import.meta.env.BASE_URL + "silk_necklace.png",
       category: "Sets",
     },
   ],
