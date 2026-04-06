@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     port: 4000,
   },
-  base: './',
+  base: '/ramya-hero-full/',
   plugins: [react()],
   resolve: {
     alias: {
