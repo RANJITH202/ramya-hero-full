@@ -1,6 +1,6 @@
 {
-  "name": "my-app",
-  "private": true,
+  "name": "ramyas-creations",
+  "homepage": "https://ranjith202.github.io/ramya-hero-antigravity",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -43,6 +43,7 @@
     "cmdk": "^1.1.1",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.14.2",
     "input-otp": "^1.4.2",
     "lenis": "^1.3.17",
